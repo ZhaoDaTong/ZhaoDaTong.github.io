@@ -1088,12 +1088,12 @@ pre .javascript .function {
 .posts-expand .post-body ul li {
   list-style: circle;
 }
-/*.posts-expand .post-body img {
+.posts-expand .post-body img {
   box-sizing: border-box;
   margin: auto;
   padding: 3px;
   border: 1px solid #ddd;
-}*/
+}
 /*.posts-expand .fancybox img {
   margin: 0 auto;
 }*/
