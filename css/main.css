@@ -80,6 +80,7 @@ sub {
 }
 img {
   border: 0;
+  margin-left: 10px;
 }
 svg:not(:root) {
   overflow: hidden;
