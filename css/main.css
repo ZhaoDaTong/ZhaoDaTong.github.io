@@ -295,8 +295,8 @@ blockquote {
   padding: 0;
 }
 img {
-  /*display: block;*/
-  margin: auto;
+  display: block;
+  margin: 10px;
   max-width: 100%;
   height: auto;
 }
