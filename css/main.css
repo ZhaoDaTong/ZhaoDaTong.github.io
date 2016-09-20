@@ -1094,9 +1094,9 @@ pre .javascript .function {
   padding: 3px;
   border: 1px solid #ddd;
 }
-/*.posts-expand .fancybox img {
+.posts-expand .fancybox img {
   margin: 0 auto;
-}*/
+}
 @media (max-width: 767px) {
   .posts-collapse {
     margin: 0 20px;
@@ -1383,11 +1383,11 @@ pre .javascript .function {
   vertical-align: middle;
   border: none;
 }
-/*.post-gallery .post-gallery-img img {
+.post-gallery .post-gallery-img img {
   max-width: 100%;
   max-height: 100%;
   border: none;
-}*/
+}
 .fancybox-close,
 .fancybox-close:hover {
   border: none;
