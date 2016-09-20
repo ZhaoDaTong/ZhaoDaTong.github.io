@@ -294,12 +294,12 @@ blockquote {
   margin: 0;
   padding: 0;
 }
-img {
+/*img {
   display: block;
   margin: 10px, 10px;
   max-width: 100%;
   height: auto;
-}
+}*/
 hr {
   margin: 40px 0;
   height: 3px;
@@ -687,11 +687,11 @@ pre .javascript .function {
 .page-post-detail .post-type-quote blockquote div {
   text-align: center;
 }
-.post .post-body .group-picture img {
+/*.post .post-body .group-picture img {
   box-sizing: border-box;
   padding: 0 3px;
   border: none;
-}
+}*/
 .post .group-picture-row {
   overflow: hidden;
   margin-top: 6px;
@@ -1006,13 +1006,13 @@ pre .javascript .function {
     word-break: break-word;
   }
 }
-.post-body .fancybox img {
+/*.post-body .fancybox img {
   display: block !important;
   margin: 0 auto;
   cursor: pointer;
   cursor: zoom-in;
   cursor: -webkit-zoom-in;
-}
+}*/
 .post-body .image-caption,
 .post-body .figure .caption {
   margin: 10px auto 15px;
@@ -1088,15 +1088,15 @@ pre .javascript .function {
 .posts-expand .post-body ul li {
   list-style: circle;
 }
-.posts-expand .post-body img {
+/*.posts-expand .post-body img {
   box-sizing: border-box;
   margin: auto;
   padding: 3px;
   border: 1px solid #ddd;
-}
-.posts-expand .fancybox img {
+}*/
+/*.posts-expand .fancybox img {
   margin: 0 auto;
-}
+}*/
 @media (max-width: 767px) {
   .posts-collapse {
     margin: 0 20px;
@@ -1383,11 +1383,11 @@ pre .javascript .function {
   vertical-align: middle;
   border: none;
 }
-.post-gallery .post-gallery-img img {
+/*.post-gallery .post-gallery-img img {
   max-width: 100%;
   max-height: 100%;
   border: none;
-}
+}*/
 .fancybox-close,
 .fancybox-close:hover {
   border: none;
