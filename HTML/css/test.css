@@ -1,4 +1,34 @@
-p
+p.red
 {
 	color: red;
+	background-color: yellow;
+}
+
+p.red:hover
+{
+	background-color: salmon;
+}
+
+p a
+{
+	color: orange;
+}
+
+a:hover
+{
+	background-color: blue;
+}
+
+a.href
+{
+	color: yellow;
+}
+
+.ancestors *
+{
+	display: block;
+	border: 2px solid lightgray;
+	color: lightgray;
+	padding: 15px;
+	margin: 15px;
 }
