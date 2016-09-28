@@ -1,0 +1,56 @@
+{
+	"version":"1.2",
+	"server":"https://www.travelchinaguide.com/inc/app/chinaTours/public/config.json",
+	"paypalFee":"0.029",
+	"index":{
+		"sg":{
+			"img":"https://data.travelchinaguide.com/images/tcg/tour/v2015/banner/5.jpg"
+		},
+		"private":{ 
+			"list":"https://www.travelchinaguide.com/inc/app/chinaTours/tour_private/index/"
+		}
+	},
+	"api":{
+		"adv":[
+			"https://www.travelchinaguide.com/inc/app/chinaTours/public/adv/1.png"
+		],
+		"aboutus":"https://www.travelchinaguide.com/inc/app/chinaTours/public/aboutus/index.html",
+		"faq":"https://www.travelchinaguide.com/inc/app/chinaTours/public/faq.json",
+		"service": "https://www.travelchinaguide.com/inc/app/chinaTours/tour_sg/service/",
+		"oneDayTour": {
+			"inquiry": "https://www.travelchinaguide.com/inc/app/chinaTours/oneDayTour/inquiry",
+			"list": "https://www.travelchinaguide.com/inc/app/chinaTours/oneDayTour/list/?city="
+		},
+		"reviews":{
+			"list":"https://www.travelchinaguide.com/inc/app/chinaTours/reviews/list/",
+			"detail":"https://www.travelchinaguide.com/inc/app/chinaTours/reviews/detail/"
+		},
+		"myFavorite":"https://www.travelchinaguide.com/inc/app/chinaTours/favorite/view/?code=",
+		"tourSearch":{
+			"city":["Beijing","Shanghai","Xian","Guilin","Chengdu","Yangtze Cruise","Hong Kong","Tibet","Lijiang","Luoyang","Suzhou","Any"],
+			"query":"https://www.travelchinaguide.com/inc/app/chinaTours/tourSearch/query/"
+		},
+		"tour_sg":{
+			"list":"https://www.travelchinaguide.com/inc/app/chinaTours/Tour_sg/list",
+			"detail":"https://www.travelchinaguide.com/inc/app/chinaTours/Tour_sg/detail/?url=",
+			"inquiry":"https://www.travelchinaguide.com/inc/app/chinaTours/Tour_sg/inquiry/"
+		},
+		"tour_private":{
+			"list":"https://www.travelchinaguide.com/inc/app/chinaTours/tour_private/list/", 
+			"detail":"https://www.travelchinaguide.com/inc/app/chinaTours/Tour_sg/detail/?url=",
+			"inquiry":"https://www.travelchinaguide.com/inc/app/chinaTours/tour_private/inquiry/"
+		},
+		"tailor":{
+			  "China":[ { "city":"Beijing", "isHot":1},{ "city":"Chengdu", "isHot":1},{ "city":"Chongqing", "isHot":0},{ "city":"Dali", "isHot":0},{ "city":"Datong", "isHot":0},
+                          { "city":"Dunhuang", "isHot":0},{ "city":"Guangzhou", "isHot":0},{ "city":"Guilin", "isHot":1},{ "city":"Guiyang", "isHot":0},{ "city":"Hangzhou", "isHot":0},
+                          { "city":"Harbin", "isHot":0},{ "city":"Hohhot", "isHot":0},{ "city":"Hong Kong", "isHot":1},{ "city":"Huangshan", "isHot":0},{ "city":"Jinan", "isHot":0},{ "city":"Jiuzhaigou", "isHot":0},
+                          { "city":"Kashgar", "isHot":0},{ "city":"Kunming", "isHot":0},{ "city":"Lanzhou", "isHot":0},{ "city":"Lhasa", "isHot":1},{ "city":"Lijiang", "isHot":1},
+                          { "city":"Luoyang", "isHot":0},{ "city":"Nanjing", "isHot":0},{ "city":"Pingyao", "isHot":0},{ "city":"Qingdao", "isHot":0},{ "city":"Shanghai", "isHot":1},
+                          { "city":"Shenzhen", "isHot":0},{"city":"Suzhou", "isHot":0},{"city":"Taiyuan", "isHot":0},{"city":"Tibet", "isHot":1},{"city":"Turpan", "isHot":0},{"city":"Urumqi", "isHot":0},
+                          {"city":"Zhouzhuang", "isHot":0},{"city":"Xiamen", "isHot":0},{"city":"Xian", "isHot":1},{"city":"Xining", "isHot":0},{"city":"Yangshuo", "isHot":0},{"city":"Yangtze River", "isHot":1}],
+			"OtherAsiaCountries":["Bhutan","Cambodia","India","Laos","Mongolia","Myanmar","Nepal","North Korea","Sri Lanka","Thailand","Vietnam"],
+			"inquiry":"https://www.travelchinaguide.com/inc/app/chinaTours/tailor/inquiry/"
+			},
+		"earlyBird":""
+	}
+}
