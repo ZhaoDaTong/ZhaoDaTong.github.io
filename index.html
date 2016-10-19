@@ -258,6 +258,104 @@
             
               
                 
+                <a class="post-title-link" href="/2016/09/30/iOS-Button-加载网络图片缩放问题/" itemprop="url">
+                  iOS Button 加载网络图片缩放问题
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-30T10:50:14+08:00" content="2016-09-30">
+              2016-09-30
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>最近有需求，需要 button 使用 web image ，就直接使用了第三方库 YYKit 中提供的 category 方法<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[_saveBtn setImageWithURL:[<span class="built_in">NSURL</span> URLWithString:discountDic[<span class="string">@"pic"</span>]] forState:<span class="built_in">UIControlStateNormal</span> placeholder:<span class="literal">nil</span>];</div></pre></td></tr></table></figure></p>
+<p>但是这样子出现了问题，在屏幕像素比较大的设备上会出现显示问题，比如 6 plus<br><img src="https://github.com/ZhaoDaTong/ZhaoDaTong.github.io/blob/master/Image/Glass.png?raw=true" alt="image"><br>图片缩小了</p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>服务器上放的图片是 2@ 的图片，在显示图片时，直接将 2@ 的图片进行展示，图片展示 size 没有变化，但是像素变大了，所以图片会缩小<br>查看了第三方库，发现没有方法设置图片的 scale 比例，所以查看系统方法，发现系统中有对 scale 进行修改的方法<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">+ (<span class="keyword">nullable</span> <span class="built_in">UIImage</span> *)imageWithData:(<span class="built_in">NSData</span> *)data scale:(<span class="built_in">CGFloat</span>)scale <span class="built_in">NS_AVAILABLE_IOS</span>(<span class="number">6</span>_0);</div><div class="line">+ (<span class="built_in">UIImage</span> *)imageWithCGImage:(<span class="built_in">CGImageRef</span>)cgImage scale:(<span class="built_in">CGFloat</span>)scale orientation:(<span class="built_in">UIImageOrientation</span>)orientation <span class="built_in">NS_AVAILABLE_IOS</span>(<span class="number">4</span>_0);</div></pre></td></tr></table></figure></p>
+<p>对原先代码进行修改，增加 scale,<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">UIImage</span> *image = [<span class="built_in">UIImage</span> imageWithData:[<span class="built_in">NSData</span> dataWithContentsOfURL:[<span class="built_in">NSURL</span> URLWithString:discountDic[<span class="string">@"pic"</span>]]] scale:<span class="number">2</span>];</div><div class="line">[_saveBtn setImage:image forState:<span class="built_in">UIControlStateNormal</span>];</div></pre></td></tr></table></figure></p>
+<p>完成<br><img src="https://github.com/ZhaoDaTong/ZhaoDaTong.github.io/blob/master/Image/Glass1.png?raw=true" alt="image"></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/09/18/new-test/" itemprop="url">
                   new test
                 </a>
@@ -575,7 +673,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -592,7 +690,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
